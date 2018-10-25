@@ -39,3 +39,48 @@ curl -v -k -0 -H "Content-Type: application/json" -d "{\"username\": \"hello\", 
 ```
 
 Or simply run `./sample.curl.sh`
+
+### How to debug
+
+* The default log level is `INFO`. 
+* If you want to change the log level, you can change `log4j2.rootLogger.level = INFO` parameter in `osgi-cxf-karaf-example/server/src/main/resources/etc/org.ops4j.pax.logging.cfg` file.
+* You can check/tail `server-1.0-SNAPSHOT/data/log/karaf.log` file for logs. 
+
+### How to change the port
+
+* This service will start at port no `7005`
+* If you want to change the port, you can change `org.osgi.service.http.port=7005` parameter in `osgi-cxf-karaf-example/server/src/main/resources/etc/org.ops4j.pax.web.cfg` file.
+
+### For a quick customization
+
+Have a look on following modules,
+
+1. core/api - Contains POJO classes.
+1. core/rest - Implemented REST API and routes.
+1. core/service - Implemented a sample service to process REST API requests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
