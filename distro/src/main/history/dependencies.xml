@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.5.0" name="distro">
+    <feature version="0.0.0">
+        <feature>runtime</feature>
+        <feature>shell</feature>
+        <feature>transport-http</feature>
+        <feature>transport-http</feature>
+        <feature>wrapper</feature>
+        <bundle>mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
+        <bundle>mvn:lk.dushan.example.osgi.cxf.core.rest/rest/1.0-SNAPSHOT</bundle>
+        <bundle>mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.2.0</bundle>
+        <bundle>mvn:org.apache.karaf.wrapper/org.apache.karaf.wrapper.core/4.2.0</bundle>
+        <bundle>mvn:org.eclipse.jetty.websocket/websocket-api/${jetty.version}</bundle>
+        <bundle>mvn:org.eclipse.jetty.websocket/websocket-client/${jetty.version}</bundle>
+        <bundle>mvn:org.eclipse.jetty.websocket/websocket-common/${jetty.version}</bundle>
+        <bundle>mvn:org.eclipse.jetty/jetty-client/${jetty.version}</bundle>
+        <bundle>mvn:org.eclipse.jetty/jetty-http/${jetty.version}</bundle>
+        <bundle>mvn:org.eclipse.jetty/jetty-io/${jetty.version}</bundle>
+        <bundle>mvn:org.eclipse.jetty/jetty-proxy/${jetty.version}</bundle>
+        <bundle>mvn:org.eclipse.jetty/jetty-util/${jetty.version}</bundle>
+    </feature>
+</features>
